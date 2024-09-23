@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.mobileimg {
+  display: none;
+}
+
+.desctop {
+  display: block;
+}
+
+@media (max-width: 375px) {
+  .mobileimg {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+body {
+  margin: 0 auto;
+  font-family: Barlow Condensed, sans-serif;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (max-width: 375px) {
+  .wrapper {
+    padding: 38px 32px 92px 32px;
+  }
+}
+.wrapper header {
+  margin-bottom: 162px;
+}
+.wrapper header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 64px;
+}
+@media (max-width: 375px) {
+  .wrapper header .container {
+    padding: 0px;
+  }
+}
+.wrapper header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 42px;
+  list-style: none;
+}
+.wrapper header .container nav ul .login {
+  opacity: 50%;
+}
+.wrapper header .container nav ul .dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper header .container nav ul .dot div {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgb(36, 41, 66);
+  opacity: 15%;
+}
+.wrapper header .container nav ul a {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  color: rgb(36, 41, 66);
+  text-decoration: none;
+}
+.wrapper header .container nav ul a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.wrapper section .container {
+  display: grid;
+  grid-template-columns: 470px 1fr;
+  gap: 100px;
+}
+.wrapper section .container_item .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.wrapper section .container_item .text div {
+  max-width: 48px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 50px;
+  background: rgb(36, 41, 66);
+  padding: 3px 10px;
+}
+.wrapper section .container_item .text p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 5px;
+  color: rgb(36, 41, 66);
+  opacity: 50%;
+}
+.wrapper section .container_item h2 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: rgb(36, 41, 66);
+  letter-spacing: 0px;
+  margin-bottom: 32px;
+}
+.wrapper section .container_item .project {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgb(36, 41, 66);
+  opacity: 75%;
+  margin-bottom: 64px;
+}
+.wrapper section .container_item .bt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper section .container_item .bt button {
+  padding: 15px 24px;
+  background: rgb(255, 94, 94);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1.07px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.wrapper section .container_item .bt button:hover {
+  cursor: pointer;
+  background: rgb(250, 148, 148);
+}
+.wrapper section .container_item .bt p {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 5px;
+  color: rgb(36, 41, 66);
+  opacity: 50%;
+}
+.wrapper section .bgdiv {
+  width: 705px;
+  height: 427px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0px 0px 0px 60px;
+  background-color: rgb(237, 242, 246);
+  z-index: -1;
+}
+@media (max-width: 375px) {
+  .wrapper section .bgdiv {
+    max-width: 188px;
+  }
+}
+.wrapper section .image {
+  position: absolute;
+  top: 220px;
+  right: 0;
+}
+@media (max-width: 375px) {
+  .wrapper section .image {
+    max-width: 352px;
+    top: 126px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper header .logo {
+    max-width: 24px;
+    max-height: 24px;
+  }
+  .wrapper section .container {
+    grid-template-columns: 311px;
+  }
+  .wrapper section .container_item {
+    margin-top: 252px;
+  }
+  .wrapper section .container_item .text {
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .wrapper section .container_item h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+  .wrapper section .container_item .project {
+    margin-bottom: 27px;
+  }
+  .wrapper section .container_item .bt {
+    gap: 20px;
+  }
+  .wrapper section .container_item .bt button {
+    padding: 12px;
+    font-size: 8px;
+    letter-spacing: 0.93px;
+  }
+  .wrapper section .container_item .bt p {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+  }
+}
